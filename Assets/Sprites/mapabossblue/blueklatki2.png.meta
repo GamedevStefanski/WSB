@@ -484,7 +484,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blueklatki2_0: 8371037060933324438
+      blueklatki2_1: 8355907591660026386
+      blueklatki2_10: 960633913877944241
+      blueklatki2_11: -2052119743761926772
+      blueklatki2_12: 2627632481362397744
+      blueklatki2_13: -2965433530020076398
+      blueklatki2_14: 2440410495964115139
+      blueklatki2_2: -1897257176871587045
+      blueklatki2_3: 7127614175226352996
+      blueklatki2_4: 5662298432088442621
+      blueklatki2_5: 1409002964225813920
+      blueklatki2_6: 3765848039688256944
+      blueklatki2_7: 6403811940001394139
+      blueklatki2_8: 6512657440649893102
+      blueklatki2_9: -5942689119332015080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
