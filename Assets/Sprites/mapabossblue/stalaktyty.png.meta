@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 34c64effe0b942640ad44eb8557b30ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 543877056046501936
+    second: stalaktyty_0
+  - first:
+      213: 1860745284918717018
+    second: stalaktyty_1
+  - first:
+      213: -6531086293667584974
+    second: stalaktyty_2
+  - first:
+      213: 7308928129428621973
+    second: stalaktyty_3
+  - first:
+      213: -7904102551144054984
+    second: stalaktyty_4
+  - first:
+      213: -6630462294267753225
+    second: stalaktyty_5
+  - first:
+      213: 621564839975455049
+    second: stalaktyty_6
+  - first:
+      213: 8968682552403853111
+    second: stalaktyty_7
+  - first:
+      213: -6304205356276610277
+    second: stalaktyty_8
+  - first:
+      213: -62202291097276001
+    second: stalaktyty_9
+  - first:
+      213: 6291688977634532299
+    second: stalaktyty_10
+  - first:
+      213: -7333784683552961879
+    second: stalaktyty_11
+  - first:
+      213: 874130153486583747
+    second: stalaktyty_12
+  - first:
+      213: 3463966391950081197
+    second: stalaktyty_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stalaktyty_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 111
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03013270d4d3c8700800000000000000
+      internalID: 543877056046501936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 412
+        width: 81
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a201d5af1b2d910800000000000000
+      internalID: 1860745284918717018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 449
+        width: 71
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234658c7e9bec55a0800000000000000
+      internalID: -6531086293667584974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_3
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 506
+        width: 59
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a047bc8678e6560800000000000000
+      internalID: 7308928129428621973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_4
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 558
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fbcc28b9cfe4290800000000000000
+      internalID: -7904102551144054984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_5
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 505
+        width: 183
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc8c8d4caddbf3a0800000000000000
+      internalID: -6630462294267753225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 557
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9490c93cded30a800800000000000000
+      internalID: 621564839975455049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_7
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 500
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f76476349277c70800000000000000
+      internalID: 8968682552403853111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_8
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 544
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b840c21a6f288a0800000000000000
+      internalID: -6304205356276610277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_9
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 417
+        width: 128
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f917ee68853032ff0800000000000000
+      internalID: -62202291097276001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_10
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 429
+        width: 225
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb95255ac1905750800000000000000
+      internalID: 6291688977634532299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_11
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 529
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa00a5bfa9293a90800000000000000
+      internalID: -7333784683552961879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_12
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 552
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c786064eb8812c00800000000000000
+      internalID: 874130153486583747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalaktyty_13
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 400
+        width: 50
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac7312a41b721030800000000000000
+      internalID: 3463966391950081197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stalaktyty_0: 543877056046501936
+      stalaktyty_1: 1860745284918717018
+      stalaktyty_10: 6291688977634532299
+      stalaktyty_11: -7333784683552961879
+      stalaktyty_12: 874130153486583747
+      stalaktyty_13: 3463966391950081197
+      stalaktyty_2: -6531086293667584974
+      stalaktyty_3: 7308928129428621973
+      stalaktyty_4: -7904102551144054984
+      stalaktyty_5: -6630462294267753225
+      stalaktyty_6: 621564839975455049
+      stalaktyty_7: 8968682552403853111
+      stalaktyty_8: -6304205356276610277
+      stalaktyty_9: -62202291097276001
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
