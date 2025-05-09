@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 16f;
+    [SerializeField] private float speed = 8f;
+    [SerializeField] private float jumpingPower = 16f;
     public bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
+            Jump();   
         }
 
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
@@ -29,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
         Flip();
     }
 
+    public void Jump()
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
+    }
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);

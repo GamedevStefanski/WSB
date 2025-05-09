@@ -1,29 +1,28 @@
 using UnityEngine;
 
-using System;
-public class BossUniversal : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
-    // Universal stats
     public float health;
-
-    // Color Change
+    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private ColorChange colorChange;
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
         if(health <= 0)
         {
-            Console.WriteLine("You win!");
+            Debug.Log("You're dead!");
             Destroy(this.gameObject);
         }
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if(collision.gameObject.tag == "Killzone")
         {
-            health -= collision.gameObject.GetComponent<Bullet>().bulletDamage;
+            health -= 1;
             StartCoroutine(colorChange.ChangeColor());
-
+            playerMovement.Jump();
         }
     }
 
