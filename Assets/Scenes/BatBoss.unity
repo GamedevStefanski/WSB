@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6e944d634a03845b4e2c3ccc92889f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 150
+  health: 200
   colorChange: {fileID: 336515645}
 --- !u!114 &336515645
 MonoBehaviour:
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  jumpingPower: 17
+  jumpingPower: 18
   isFacingRight: 0
   rb: {fileID: 1370157080}
   groundCheck: {fileID: 1206705689}
@@ -1376,7 +1376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  invincibilityDuration: 1
   numOfHearts: 3
   playerMovement: {fileID: 1370157078}
   colorChange: {fileID: 1370157084}
@@ -1386,6 +1385,7 @@ MonoBehaviour:
   - {fileID: 1208335052}
   fullHeart: {fileID: -1218823883695198015, guid: 55a77cd83cfd49144bde865a9fe81907, type: 3}
   emptyHeart: {fileID: -511133062249068954, guid: 5812cd2fa58a35c478b49859192c9528, type: 3}
+  gameOverText: {fileID: 1669173650}
 --- !u!114 &1370157086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1807,12 +1807,12 @@ GameObject:
   - component: {fileID: 1669173653}
   - component: {fileID: 1669173652}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: GameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1669173651
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1830,7 +1830,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1669173652
 MonoBehaviour:
@@ -1852,10 +1852,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Game over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 77076396e1c30f54fb8319d158b6cbab, type: 2}
+  m_sharedMaterial: {fileID: 5614140680240542486, guid: 77076396e1c30f54fb8319d158b6cbab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1879,15 +1879,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 150
+  m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

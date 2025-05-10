@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class DualAxisMovement : MonoBehaviour
+public class BatMovement : MonoBehaviour
 {
-    public float verticalAmplitude = 2f;      // Zakres ruchu góra-dó³
-    public float verticalSpeed = 2f;          // Prêdkoœæ góra-dó³
-    public float horizontalAmplitude = 3f;    // Zakres ruchu lewo-prawo
-    public float horizontalSpeed = 1f;        // Prêdkoœæ lewo-prawo
+    public float verticalAmplitude = 2f;
+    public float verticalSpeed = 2f;
+    public float horizontalAmplitude = 3f;
+    public float horizontalSpeed = 1f;
 
     private Vector3 startPosition;
 

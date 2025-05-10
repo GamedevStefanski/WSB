@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
     // Health
     public float health;
     private bool canTakeDamage = true;
-    [SerializeField] private float invincibilityDuration = 1f;
+    private float invincibilityDuration = 0.5f;
 
     // Health UI
     [SerializeField] private int numOfHearts;
@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Image[] hearts;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
+    [SerializeField] private GameObject gameOverText;
 
     void Update()
     {
@@ -24,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("You're dead!");
             Destroy(this.gameObject);
+            gameOverText.SetActive(true);
         }
 
         // Heart UI display
