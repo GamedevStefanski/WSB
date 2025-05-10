@@ -21,3 +21,4 @@ public class DualAxisMovement : MonoBehaviour
         transform.position = new Vector3(newX, newY, startPosition.z);
     }
 }
+ 
