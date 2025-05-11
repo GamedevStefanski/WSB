@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BeeBoss : MonoBehaviour
-
+    
 {
+    public float shootingRange;
+    public GameObject bullet;
+    public GameObject bulletParent;
+    public float fireRate = 1f;
+    private float nextFireTime = 0f;
 
     [SerializeField]
     float moveSpeed = 5f;
@@ -32,8 +37,14 @@ public class BeeBoss : MonoBehaviour
 
     void Update()
     {
+        float distanceFromPlayer = Vector2.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position);
+        if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time)
+        {
+            Instantiate(bullet, transform.position, Quaternion.identity);
+            nextFireTime = Time.time + fireRate;
+        }
 
-        CheckWhereToFace();
+            CheckWhereToFace();
 
         if (facingRight)
             MoveRight();
@@ -68,4 +79,9 @@ public class BeeBoss : MonoBehaviour
         transform.position = pos + transform.up * Mathf.Sin(Time.time * frequency) * magnitude;
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, shootingRange);
+    }
 }
