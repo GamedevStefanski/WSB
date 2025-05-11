@@ -7,28 +7,28 @@ public class PlayerShoot : MonoBehaviour
     public GameObject bulletPrefab;
 
     float timeUntilFire;
-    PlayerMovement pm;
 
-    private void Start()
+    void Update()
     {
-        pm = gameObject.GetComponent<PlayerMovement>();
+        Vector2 shootDirection = Vector2.zero;
 
-    }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && timeUntilFire < Time.time)
+        if (Input.GetKey(KeyCode.UpArrow)) shootDirection += Vector2.up;
+        if (Input.GetKey(KeyCode.DownArrow)) shootDirection += Vector2.down;
+        if (Input.GetKey(KeyCode.LeftArrow)) shootDirection += Vector2.left;
+        if (Input.GetKey(KeyCode.RightArrow)) shootDirection += Vector2.right;
+
+
+        if (shootDirection != Vector2.zero && Time.time >= timeUntilFire)
         {
-            Shoot();
+            Shoot(shootDirection.normalized);
             timeUntilFire = Time.time + fireRate;
         }
     }
 
-    void Shoot()
+    void Shoot(Vector2 direction)
     {
-        float angle = pm.isFacingRight ? 0f : 180f;
-        Instantiate(bulletPrefab, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
-
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Instantiate(bulletPrefab, firingPoint.position, Quaternion.Euler(0f, 0f, angle));
     }
-
 }
