@@ -3,25 +3,38 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    [SerializeField] private float speed = 8f;
-    [SerializeField] private float jumpingPower = 16f;
+    private float speed = 8f;
+    private float jumpingPower = 16f;
     public bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        // Wczytuj tylko A/D do poruszania w lewo/prawo
+        if (Input.GetKey(KeyCode.A))
         {
-            Jump();   
+            horizontal = -1f;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            horizontal = 1f;
+        }
+        else
+        {
+            horizontal = 0f;
         }
 
-        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
+        // Skok tylko po wciœniêciu SPACJI
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
+        }
+
+        // Krótszy skok po puszczeniu SPACJI
+        if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocity.y > 0f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
@@ -29,10 +42,6 @@ public class PlayerMovement : MonoBehaviour
         Flip();
     }
 
-    public void Jump()
-    {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
-    }
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
@@ -52,5 +61,9 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+    public void Jump()
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
     }
 }

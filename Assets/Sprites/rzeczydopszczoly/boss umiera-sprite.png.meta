@@ -834,7 +834,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      boss umiera-sprite_0: -434676344688699224
+      boss umiera-sprite_1: 5445851652758518890
+      boss umiera-sprite_10: -3315859939682163152
+      boss umiera-sprite_11: 3459839539739791157
+      boss umiera-sprite_12: 1419260168023022933
+      boss umiera-sprite_13: -5839123130728856603
+      boss umiera-sprite_14: 6790976071588578420
+      boss umiera-sprite_15: 1921898625568539554
+      boss umiera-sprite_16: -5879571466964710883
+      boss umiera-sprite_17: 9006362771216965506
+      boss umiera-sprite_18: 7150990951340165044
+      boss umiera-sprite_19: 7143741874049211644
+      boss umiera-sprite_2: -6209294601562752857
+      boss umiera-sprite_20: -8741123023561941904
+      boss umiera-sprite_21: -964309479436347985
+      boss umiera-sprite_22: -5062392450831010996
+      boss umiera-sprite_23: -2708407022983826447
+      boss umiera-sprite_24: -3397081422783271461
+      boss umiera-sprite_25: -9156718091116543245
+      boss umiera-sprite_26: 2876480951483297912
+      boss umiera-sprite_27: 7678080993478273149
+      boss umiera-sprite_28: 8881319187896461195
+      boss umiera-sprite_3: 3816717752807783688
+      boss umiera-sprite_4: 691194368433920522
+      boss umiera-sprite_5: -5706863370154224640
+      boss umiera-sprite_6: 6633650914853582194
+      boss umiera-sprite_7: -4789080941531921135
+      boss umiera-sprite_8: 7622754737238233045
+      boss umiera-sprite_9: -3249182067273058314
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
