@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      calamapa_0: 53435698231750198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,15 +11,20 @@ public class PlayerHealth : MonoBehaviour
 
     // Health UI
     [SerializeField] private int numOfHearts;
-    [SerializeField] private PlayerMovement playerMovement;
+    private PlayerMovement playerMovement;
     [SerializeField] private ColorChange colorChange;
     [SerializeField] private Image[] hearts;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private GameObject gameOverText;
 
+    private void Start()
+    {
+        playerMovement = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
+    }
     void Update()
     {
+
         // Game losing
         if (health <= 0)
         {
@@ -28,22 +33,6 @@ public class PlayerHealth : MonoBehaviour
             gameOverText.SetActive(true);
         }
 
-        // Heart UI display
-        if(health > numOfHearts)
-            health = numOfHearts;
-
-        for (int i = 0; i < numOfHearts; i++)
-        {
-            if (i<health)
-                hearts[i].sprite = fullHeart;
-            else
-                hearts[i].sprite = emptyHeart;
-
-            if (i < numOfHearts)
-                hearts[i].enabled = true;
-            else
-                hearts[i].enabled = false;
-        }
     }
 
     // Jump after touching something you shouldn't have 
