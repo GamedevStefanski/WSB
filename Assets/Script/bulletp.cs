@@ -16,12 +16,15 @@ public class bulletp : MonoBehaviour
         Vector2 direction = (target.transform.position - transform.position).normalized * speed;
         bulletRB.linearVelocity = new Vector2(direction.x, direction.y);
         Destroy(this.gameObject, 2);
+        Physics.IgnoreLayerCollision(7, 8, true);
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerHealth>().LoseHealth();
+            Destroy(this.gameObject);
         }
     }
     IEnumerator SelfDestroy()
