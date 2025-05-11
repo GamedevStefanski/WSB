@@ -30,7 +30,7 @@ public class OscillatingMovementWithFlip : MonoBehaviour
 
         Vector3 direction = newPosition - previousPosition;
 
-        // Flipuj sprite'a tylko, jeœli kierunek w poziomie siê zmieni³
+        
         if (direction.x > 0.01f && !facingRight)
         {
             Flip(true);
