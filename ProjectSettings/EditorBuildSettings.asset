@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/BatBoss.unity
+    guid: b40757bc6c15fe84caca04437d255d25
+  - enabled: 1
+    path: Assets/Scenes/BeeBoss.unity
+    guid: 3b8f5c8423983c34c82fbfb07a30f3ee
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

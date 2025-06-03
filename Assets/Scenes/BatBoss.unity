@@ -133,8 +133,8 @@ GameObject:
   - component: {fileID: 336515645}
   - component: {fileID: 336515648}
   - component: {fileID: 336515641}
-  - component: {fileID: 336515640}
   - component: {fileID: 336515643}
+  - component: {fileID: 336515649}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Killzone
@@ -142,28 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &336515640
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336515639}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 999f25775119ef041b9a824e3f02204d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &336515641
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -338,6 +316,28 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5913164200619466067, guid: 522bb869919c794488d298a0b1fdd41a, type: 3}
   projectileSpeed: 10
   shootInterval: 3
+--- !u!95 &336515649
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336515639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47cf6752fe425d04495c2f4cc3634a2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &592338748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,7 +1438,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   numOfHearts: 3
-  playerMovement: {fileID: 1370157078}
   colorChange: {fileID: 1370157084}
   hearts:
   - {fileID: 1269370432}
@@ -2218,7 +2217,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b2abeb5579ead8f4ba5fd0fd1bb08dda, type: 3}
   m_Resource: {fileID: 8300000, guid: b2abeb5579ead8f4ba5fd0fd1bb08dda, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
