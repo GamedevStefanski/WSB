@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
@@ -24,32 +25,31 @@ public class PlayerHealth : MonoBehaviour
     }
     void Update()
     {
-
-        // Game losing
-        if (health <= 0)
-        {
-            Debug.Log("You're dead!");
-            Destroy(this.gameObject);
-            gameOverText.SetActive(true);
-        }
-
-        // Heart UI display
+        // Heart UI display – musi byæ zawsze aktualizowane
         if (health > numOfHearts)
             health = numOfHearts;
 
-        for (int i = 0; i < numOfHearts; i++)
+        for (int i = 0; i < hearts.Length; i++)
         {
             if (i < health)
                 hearts[i].sprite = fullHeart;
             else
                 hearts[i].sprite = emptyHeart;
 
-            if (i < numOfHearts)
-                hearts[i].enabled = true;
-            else
-                hearts[i].enabled = false;
+            hearts[i].enabled = (i < numOfHearts);
         }
 
+        // Game losing
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+            gameOverText.SetActive(true);
+
+            if (Input.GetKey(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
     }
 
     // Jump after touching something you shouldn't have 
@@ -68,7 +68,6 @@ public class PlayerHealth : MonoBehaviour
             return;
 
         health -= 1;
-        Debug.Log("Gracz otrzyma³ obra¿enia! Zdrowie: " + health);
         StartCoroutine(Invincibility());
     }
 
