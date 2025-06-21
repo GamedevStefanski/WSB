@@ -13,7 +13,6 @@ public class BossUniversal : MonoBehaviour
     {
         if(health <= 0)
         {
-            Console.WriteLine("You win!");
             Destroy(this.gameObject);
         }
     }

@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 336515641}
   - component: {fileID: 336515643}
   - component: {fileID: 336515649}
+  - component: {fileID: 336515650}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Killzone
@@ -338,6 +339,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &336515650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336515639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f5c6c1503a12a4b851655ccac939df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 3431345585298536981, guid: e51f8fc033b19fe44909c2fa4968885a, type: 3}
+  spawnPoint: {fileID: 336515642}
+  respawnCooldown: 3
 --- !u!1 &592338748
 GameObject:
   m_ObjectHideFlags: 0
