@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6e944d634a03845b4e2c3ccc92889f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
+  health: 160
   colorChange: {fileID: 336515645}
 --- !u!114 &336515645
 MonoBehaviour:
