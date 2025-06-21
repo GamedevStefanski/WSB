@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
         playerMovement = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
     }
     void Update()
@@ -42,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
         // Game losing
         if (health <= 0)
         {
-            Destroy(this.gameObject);
+            Time.timeScale = 0f;
             gameOverText.SetActive(true);
 
             if (Input.GetKey(KeyCode.R))
